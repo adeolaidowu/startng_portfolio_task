@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b38ccccf84.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Personal Portfolio Page</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <div id="navbrand">
+          <span class="h">H</span><span class="a">a</span
+          ><span class="z">z</span>
+        </div>
+        <div id="nav-items">
+          <ul id="nav-links">
+            <li><i class="fa fa-home"></i><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="top-section" id="home">
+        <div>
+          <h1 style="color: #fff;">Front-End Web Developer</h1>
+          <hr style="border-color: #da2c38;" />
+          <h3 style="color: #fff;">
+            Based out in Lagos, Nigeria. If you are a business, seeking web
+            presence or an employer looking to hire, get in touch with me on
+            here
+          </h3>
+        </div>
+      </section>
+      <section class="middle-section" id="about">
+        <div class="abt-me">
+          <h2><span class="fas fa-user"></span> About Me</h2>
+          <hr />
+          <p>
+            Hi there! I'm <strong>Adeola Idowu</strong>, a graduate of petroleum
+            and gas engineering, i enjoy problem solving and also bringing ideas
+            to life. I enjoy challenging myself logically and i love playing
+            RPGs. I am a front end web developer who believes technology is a
+            huge part of our future and i would like to use it to help shape
+            that future. My goal is to make the world better with the power of
+            tech!
+          </p>
+          <a class="button button-alt" href="#">Learn more</a>
+        </div>
+        <div class="my-img">
+          <img src="images/deeone.jpe" alt="my-pic" />
+        </div>
+        <div class="interests">
+          <h2>My Personal Interests</h2>
+          <hr />
+          <p>
+            When I am not coding my next project, i enjoy doing any of the
+            following;
+          </p>
+          <ol>
+            <li>Learning French</li>
+            <li>Reading books</li>
+            <li>Solving sudoku and crossword puzzles</li>
+            <li>Watching football</li>
+            <li>Playing RPGs</li>
+          </ol>
+        </div>
+      </section>
+      <section class="middle-section-lower" id="skills">
+        <div class="skills">
+          <h2 class="text text-center text-primary">
+            <span class="fa fa-code"></span> Skills
+          </h2>
+          <hr />
+          <p>
+            The following are the languages i write and my corresponding
+            proficiency in them;
+          </p>
+          <div class="progress">
+            <p>
+              HTML
+              <span
+                class="fab fa-html5"
+                style="font-size: 20px; color: orangered;"
+              ></span>
+            </p>
+            <progress max="100" value="85" class="html"></progress>
+          </div>
+          <div class="progress">
+            <p>
+              CSS
+              <span
+                class="fab fa-css3-alt"
+                style="font-size: 20px; color: dodgerblue;"
+              ></span>
+            </p>
+            <progress max="100" value="75"></progress>
+          </div>
+          <div class="progress">
+            <p>
+              JavaScript
+              <span
+                class="fab fa-js-square"
+                style="font-size: 20px; color: yellow;"
+              ></span>
+            </p>
+            <progress max="100" value="70"></progress>
+          </div>
+          <div class="progress">
+            <p>
+              BootStrap
+              <span
+                class="fab fa-bootstrap"
+                style="font-size: 20px; color: purple;"
+              ></span>
+            </p>
+            <progress max="100" value="80"></progress>
+          </div>
+          <div class="progress">
+            <p>
+              ReactJS
+              <span
+                class="fab fa-react"
+                style="font-size: 20px; color: dodgerblue;"
+              ></span>
+            </p>
+            <progress max="100" value="60"></progress>
+          </div>
+        </div>
+        <div class="bio-data">
+          <h2 class="text text-primary">
+            <span class="fa fa-tools"></span> Bio-Data
+          </h2>
+          <hr />
+          <ul>
+            <li><b>Name</b> - Adeola Idowu</li>
+            <li><b>Address</b> - 37, Pariola Street Ogudu, Lagos</li>
+            <li><b>State of Origin</b> - Lagos State</li>
+            <li><b>DoB</b> - 27th July</li>
+            <li><b>Occupation</b> - Web Developer</li>
+            <li><b>Hometown</b> - Lagos Island</li>
+            <li><b>Slack-Id</b> - SNG-01995</li>
+          </ul>
+        </div>
+      </section>
+      <section class="bottom-section contact" id="contact">
+        <div>
+          <h2>Contact</h2>
+          <hr />
+          <p>
+            Now you have seen an overview of my personal website. If you would
+            like to send me a general message, kindly fill the form below.
+          </p>
+        </div>
+        <form method="get" action="#">
+          <div class="form-group">
+            <label>Name*</label>
+            <input type="text" name="name" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Email*</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label>Message*</label>
+            <textarea name="message" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </section>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="copyright">
+          &copy; 2020 Adeola Idowu | All rights reserved.
+        </div>
+        <div class="socials-container">
+          <a href="#"><i class="fab fa-facebook socials"></i></a>
+          <a href="#"><i class="fab fa-twitter socials"></i></a>
+          <a href="#"><i class="fab fa-github socials"></i></a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

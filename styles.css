@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Ubuntu:wght@300;400&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 50px 0 0 0;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Merriweather", serif;
+  color: #09c;
+}
+
+hr {
+  border-style: none;
+  border-bottom-style: dotted;
+  border-width: 6px;
+  border-color: grey;
+  width: 10%;
+}
+/* navbar-styling */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav > div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div p {
+  display: inline-block;
+  margin: 0;
+}
+
+nav {
+  background: #333;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.h {
+  color: #ff0000;
+}
+.a {
+  color: #008b8b;
+}
+.z {
+  color: #ff8c00;
+}
+.s {
+  color: #228b22;
+}
+#navbrand {
+  font-size: 28px;
+  flex-grow: 2;
+}
+
+#nav-items {
+  flex-grow: 1;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+#nav-links li:hover {
+  border-bottom: 1px solid white;
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+
+/* top-section */
+.top-section {
+  background-image: url("./images/pro.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 30em;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-section h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* middle-section */
+.middle-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 50px;
+  text-align: center;
+  column-gap: 10px;
+}
+
+.abt-me,
+.interests,
+.middle-section-lower {
+  background: rgb(245, 243, 243);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.abt-me {
+  grid-column: 1 / span 6;
+}
+
+.my-img {
+  grid-column: span 3;
+}
+
+.my-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interests {
+  grid-column: span 3;
+}
+
+.interests ol li {
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* middle-section-lower */
+.middle-section-lower {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  margin-top: 15px;
+}
+
+.middle-section-lower h2 {
+  text-align: center;
+}
+
+.bio-data ul li {
+  margin: 8px 0;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress p {
+  margin: 0;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 20px;
+  margin: 5px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, #09c, #f44);
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+/* contact-form */
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+textarea {
+  min-height: 10em;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.form-control {
+  padding: 8px 10px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.button {
+  display: block;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  margin-left: 0;
+  background-color: dodgerblue;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-alt {
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: rgb(8, 100, 185);
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.contact {
+  background-color: #da2c38;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.contact h2 {
+  color: white;
+}
+#skills {
+  background-color: whitesmoke;
+}
+/* footer */
+.footer {
+  padding: 10px;
+  min-height: 100px;
+  background-color: #3b413c;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 26px;
+}
+
+.copyright {
+  flex-grow: 3;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 240px;
+}
+
+.socials-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
